@@ -2,7 +2,7 @@
 Tektronix TM500/TM5000 extender
 
 Copyright (C) 2020 Lin Ke-Fong (anotherlin@gmail.com)\
-*This project is free, you can do whatever you want with it.*
+*This project is free, you may do whatever you want with it.*
 
 ## Purpose
 
@@ -10,7 +10,8 @@ This is a small Kicad project for a Tektronix TM500/TM5000 extender. For calibra
 is convenient to be able to work on the plug-ins outside of a mainframe. In addition, the 
 designed PCB can be fitted with extra connectors and circuitry to allow standalone operation. That 
 is, to allow plug-ins to be powered by lab supplies, hence providing a kind of controlled 
-environment handy for debugging/repair.
+environment handy for debugging/repair. Some [photos](./figures) can give you a better idea of what
+this project is about.
 
 ## Prerequisites
 
@@ -37,14 +38,14 @@ running the Python footprint generation script (code is a bit ugly, I'm a Python
 
 ## Assembly
 
-Please first have a look at the schematic ([tek_tm_ext.pdf](./tek_tm_ext.pdf)) and *BOM/parts 
+Please first have a look at the schematic ([tek_tm_ext.pdf](./tek_tm_ext.pdf)) and *BOM/Parts 
 needed* section at the end of this document.
 
 Pins/pads are numbered from bottom to top. Looking from the front to the back of the TM500 or 
 TM5000 mainframe, left is 'A' and right is 'B'. Solder wires between the PCB and the 56 pins 
 connectors. For basic functionality, only pins A1 to A13 and B1 to B13 need to be soldered.
 Depending on the plug-in at hand, supplemental pins may be soldered for extra connectivity 
-functionalities. Use 22AWG or 24AWG wires. If available, .156" pitch (3.96mm) ribbon cable 
+functionalities. Use 22 or 24AWG wires. If available, .156" pitch (3.96mm) ribbon cable 
 will make soldering easier.
 
 Make sure to insert the polarizing key between pins 6 and 7, this is to ensure the 56 pins 
@@ -73,7 +74,7 @@ center taped 18VAC transformer. In both cases, make sure the wall warts have the
 power rating(s). For TM5000 plug-ins, enable the "power good" signal by setting the J11 jumper
 at 1-2. 
 
-## BOM/parts needed
+## BOM/Parts needed
 
 For wiring, use 22AWG or 24AWG (for example, Alpha Wire 1550 or 1551). If available, .156" pitch 
 (3.96mm) ribbon cable will make assembly easier. The proposed pass transistors have appropriate 
